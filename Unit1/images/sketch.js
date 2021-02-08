@@ -6,6 +6,7 @@ function setup() {
   food = loadImage("assets/food.jpeg");
   gym = loadImage("assets/gym.png");
   music = loadImage("assets/music.png");
+  imageMode(CENTER);
 }
 
 function draw() {
