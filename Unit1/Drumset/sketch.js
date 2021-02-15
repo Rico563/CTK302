@@ -11,10 +11,10 @@ function draw() {
   triangle(5, 125, 58, 110, 111, 125);
   line(58, 125, 58, 300);
   triangle(299, 125, 342, 115, 385, 125);
-  line(342, 125, 342, 135)
+  line(342, 125, 342, 135);
   triangle(299, 135, 342, 145, 385, 135);
-  line(342, 145, 342, 300)
-  fill('blue')
+  line(342, 145, 342, 300);
+  fill('blue');
   rect(130, 140, 50, 45, 3);
   fill('white');
   rect(130, 140, 50, 4, 3);
@@ -23,7 +23,7 @@ function draw() {
   fill('white');
   rect(220, 140, 50, 4, 3);
   fill('blue');
-  line(180, 165, 220, 165)
+  line(180, 165, 220, 165);
   rect(58, 223, 60, 70, 3);
   fill('white');
   rect(58, 223, 60, 4, 3);
@@ -32,9 +32,9 @@ function draw() {
   rect(284, 223, 60, 27, 3);
   fill('white');
   rect(284, 223, 60, 4, 3);
-  fill('blue')
+  fill('blue');
   line(314, 250, 314, 310);
-  fill('grey')
+  fill('grey');
   ellipse(width / 2, height / 2 + 70, 160, 160);
   fill('white');
   ellipse(width / 2, height / 2 - 110, 50, 53);
@@ -53,7 +53,7 @@ function draw() {
 
 
 
-  if (mouseIsPressed) {
+  if (mouseIsPressed){
     background(65, 105, 225);
     fill(244, 164, 96);
     rect(0, 240, 400, 400);
@@ -73,7 +73,7 @@ function draw() {
     fill('grey');
     rect(220, 140, 50, 4, 3);
     fill(34, 139, 34);
-    line(180, 165, 220, 165)
+    line(180, 165, 220, 165);
     rect(58, 223, 60, 70, 3);
     fill('grey');
     rect(58, 223, 60, 4, 3);
@@ -82,7 +82,7 @@ function draw() {
     rect(284, 223, 60, 27, 3);
     fill('grey');
     rect(284, 223, 60, 4, 3);
-    fill('green')
+    fill('green');
     line(314, 250, 314, 310);
     fill(255, 222, 173);
     ellipse(width / 2, height / 2 + 70, 160, 160);
@@ -126,10 +126,10 @@ function draw() {
     triangle(5, 125, 58, 110, 111, 125);
     line(58, 125, 58, 300);
     triangle(299, 125, 342, 115, 385, 125);
-    line(342, 125, 342, 135)
+    line(342, 125, 342, 135);
     triangle(299, 135, 342, 145, 385, 135);
-    line(342, 145, 342, 300)
-    fill('blue')
+    line(342, 145, 342, 300);
+    fill('blue');
     rect(130, 140, 50, 45, 3);
     fill('white');
     rect(130, 140, 50, 4, 3);
@@ -138,7 +138,7 @@ function draw() {
     fill('white');
     rect(220, 140, 50, 4, 3);
     fill('blue');
-    line(180, 165, 220, 165)
+    line(180, 165, 220, 165);
     rect(58, 223, 60, 70, 3);
     fill('white');
     rect(58, 223, 60, 4, 3);
@@ -147,9 +147,9 @@ function draw() {
     rect(284, 223, 60, 27, 3);
     fill('white');
     rect(284, 223, 60, 4, 3);
-    fill('blue')
+    fill('blue');
     line(314, 250, 314, 310);
-    fill('grey')
+    fill('grey');
     ellipse(width / 2, height / 2 + 70, 160, 160);
     fill('white');
     ellipse(width / 2, height / 2 - 110, 50, 53);
@@ -161,8 +161,8 @@ function draw() {
     line(162, 120, 150, 80);
 
     fill(160, 82, 45);
-    rect(150, 80, 40, 5);
-    rect(246, 80, -40, 5);
+    rect(150, 80, -40, 5);
+    rect(246, 80, 40, 5);
     fill('white');
     ellipse(width / 2, height / 2 - 110, 50, 53);
 
