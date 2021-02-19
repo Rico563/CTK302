@@ -1,11 +1,9 @@
 function setup() {
-  createCanvas(1000, 800);
+  createCanvas(500, 500);
   rectMode(CENTER);
   ellipseMode(CENTER);
 
 }
-
-function draw() {
 
   function draw() {
     background('red');
@@ -121,9 +119,9 @@ function draw() {
       strokeWeight(2);
       text('CTK', width / 2 - 30, height / 2 + 80);
       textSize(28);
-    } else {
+    }
       // when the mouse isn't pressed!
-    
+
 
     // this shows mouse location - comment it out when you're done!
 
