@@ -1,10 +1,9 @@
 let state = 0;
 let timer = 0;
-var song1;
-var f1;
+let song1;
 
 function preload() {
-  song1 = loadSound("assets/RADIOACTIVE.mp3");
+  song1 = loadSound("assets/ComeMyWay.mp3");
 
   song1.loop();
   song1.pause();
@@ -12,8 +11,6 @@ function preload() {
 
 function setup() {
   createCanvas(800, 800);
-  f1 = loadFont("assets/GoodMood.ttf");
-  textAlign(CENTER);
 }
 
 function draw() {
@@ -26,9 +23,7 @@ function draw() {
       break;
 
     case 1:
-    textSize(48);
-    textFont (f1);
-      text('Enjoy the concert!!', width/2, height/2);
+      text('listen to song 1', 100, 100);
       break;
 
     case 2:
@@ -102,8 +97,8 @@ function draw() {
       rect(720, 25, 50, 30, 5, 10, 10, 5);
 
       fill('black');
-      textSize(48);
-      text('CTK', width / 2, height / 2 - 120);
+      textSize(28);
+      text('CTK', width / 2 - 25, height / 2 - 120);
       line(400, 130, 438, 120);
       line(400, 130, 362, 120);
       line(438, 120, 446, 80);
@@ -213,8 +208,8 @@ function draw() {
       rect(720, 25, 50, 30, 5, 10, 10, 5);
 
       fill('black');
-      textSize(48);
-      text('CTK', width / 2, height / 2 - 120);
+      textSize(28);
+      text('CTK', width / 2 - 25, height / 2 - 120);
       line(400, 130, 438, 140);
       line(438, 140, 464, 130);
       line(400, 130, 362, 120);
@@ -330,8 +325,8 @@ function draw() {
       rect(720, 25, 50, 30, 5, 10, 10, 5);
 
       fill('black');
-      textSize(48);
-      text('CTK', width / 2, height / 2 - 120);
+      textSize(28);
+      text('CTK', width / 2 - 25, height / 2 - 120);
       line(400, 130, 438, 120);
       line(400, 130, 362, 120);
       line(438, 120, 446, 80);
@@ -448,8 +443,8 @@ function draw() {
       rect(720, 25, 50, 30, 5, 10, 10, 5);
 
       fill('black');
-      textSize(48);
-      text('CTK', width / 2, height / 2 - 120);
+      textSize(28);
+      text('CTK', width / 2 - 25, height / 2 - 120);
       line(400, 130, 438, 140);
       line(438, 140, 464, 130);
       line(400, 130, 362, 140);
@@ -501,16 +496,17 @@ function draw() {
   }
 
   timer = timer + 1;
-  if (timer > 120) {
+  if (timer > 100) {
     timer = 0;
     state++;
     if (state > 5) state = 2;
 
   }
-  function mouseReleased() {
-    state++;
-    if (state > 5) state = 2;
 
 }
 
+function mouseReleased() {
+  state++;
+  if (state > 5) state = 2;
+  song1.pause();
 }
