@@ -1,5 +1,6 @@
 let state = 0;
 let timer = 0;
+let f1;
 let song1;
 
 function preload() {
@@ -8,6 +9,8 @@ function preload() {
 
 function setup() {
   createCanvas(800, 800);
+  textAlign(CENTER);
+  f1 = loadFont("assets/GoodMood.ttf");
   song1.loop();
   song1.pause();
 }
@@ -16,15 +19,17 @@ function draw() {
   background('red');
   switch (state) {
 
+
     case 0:
-      song1.play();
-      state = 1;
+      text('Click to Enjoy the concert!!', width/2, height/2);
+      textSize(48);
+      textFont (f1);
       break;
 
-    case 1:
-      text('Enjoy the concert!!', width/2-200, height/2);
-      textSize(48);
-      break;
+      case 1:
+        song1.play();
+        state = 2;
+        break;
 
     case 2:
       background('red');
@@ -98,7 +103,7 @@ function draw() {
 
       fill('black');
       textSize(28);
-      text('CTK', width / 2 - 25, height / 2 - 120);
+      text('CTK', width / 2, height / 2 - 120);
       line(400, 130, 438, 120);
       line(400, 130, 362, 120);
       line(438, 120, 446, 80);
@@ -209,7 +214,7 @@ function draw() {
 
       fill('black');
       textSize(28);
-      text('CTK', width / 2 - 25, height / 2 - 120);
+      text('CTK', width / 2, height / 2 - 120);
       line(400, 130, 438, 140);
       line(438, 140, 464, 130);
       line(400, 130, 362, 120);
@@ -326,7 +331,7 @@ function draw() {
 
       fill('black');
       textSize(28);
-      text('CTK', width / 2 - 25, height / 2 - 120);
+      text('CTK', width / 2, height / 2 - 120);
       line(400, 130, 438, 120);
       line(400, 130, 362, 120);
       line(438, 120, 446, 80);
@@ -444,7 +449,7 @@ function draw() {
 
       fill('black');
       textSize(28);
-      text('CTK', width / 2 - 25, height / 2 - 120);
+      text('CTK', width / 2, height / 2 - 120);
       line(400, 130, 438, 140);
       line(438, 140, 464, 130);
       line(400, 130, 362, 140);
@@ -509,4 +514,8 @@ function mouseReleased() {
   state++;
   if (state > 5) state = 2;
   song1.pause();
+}
+
+function touchStarted() {
+  getAudioContext().resume();
 }
