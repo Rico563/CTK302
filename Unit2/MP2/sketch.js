@@ -3,8 +3,7 @@ let timer = 0;
 let song1;
 
 function preload() {
-  song1 = loadSound("assets/ComeMyWay.mp3");
-
+  song1 = loadSound("assets/RADIOACTIVE.mp3");
   song1.loop();
   song1.pause();
 }
