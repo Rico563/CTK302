@@ -23,7 +23,8 @@ function draw() {
       break;
 
     case 1:
-      text('listen to song 1', 100, 100);
+      text('Enjoy the concert!!', width/2-200, height/2);
+      textSize(48);
       break;
 
     case 2:
