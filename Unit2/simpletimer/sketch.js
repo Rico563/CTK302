@@ -6,10 +6,10 @@ function setup() {
 }
 
 function draw() {
-timer++;
-if(timer>5*60){
-  timer=0;
-  print("beep");
-}
+  timer++;
+  if (timer > 5 * 60) {
+    timer = 0;
+    print("beep");
+  }
 
 }

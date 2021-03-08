@@ -1,21 +1,21 @@
 let state = 0;
 
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(600, 500);
   textAlign(CENTER);
-  textSize(48);
+  textSize(24);
 }
 
 function draw() {
   switch (state) {
     case 0:
       background('red');
-      text("joke", width / 2, height / 2);
+      text("What is Micheal Jackson's favorite demin store?", width / 2, height / 2);
       break;
 
     case 1:
       background('green');
-      text("joke ends", width / 2, height / 2);
+      text("Billie Jeans!!", width / 2, height / 2);
       break;
 
   }
