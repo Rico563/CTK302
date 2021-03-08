@@ -5,7 +5,6 @@ function preload() {
   song1 = loadSound("assets/BorrachoTeRecuerdo.mp3");
   song2 = loadSound("assets/F-ckUpSomeCommas.mp3");
   song3 = loadSound("assets/VerySuperstitious.mp3");
-
   song1.loop();
   song1.pause();
   song2.loop();
@@ -53,8 +52,6 @@ function draw() {
 
   }
 
-}
-
 function mouseReleased() {
   state++;
   if (state > 5) state = 0;
@@ -66,4 +63,6 @@ function mouseReleased() {
 
 function touchStarted() {
   getAudioContext().resume();
+}
+
 }
