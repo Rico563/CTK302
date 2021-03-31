@@ -36,7 +36,7 @@ class Car {
     this.a = random(200, 255);
   }
 
-  // methods
+  // method
 
   display() {
     fill(this.r, this.g, this.b, this.a) ;
