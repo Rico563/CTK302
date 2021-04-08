@@ -18,7 +18,7 @@ function setup() {
 
 
 
-  bunnyImage = loadImage("assets/bunny.jpeg");
+  bunnyImage = loadImage("assets/Bus.jpeg");
   imageMode(CENTER);
   rectMode(CENTER);
 
@@ -40,7 +40,7 @@ function draw() {
 
   rotate(radians(alpha)); // rotate the bunny depending on the alpha intake
 
-  image(bunnyImage, 0, 0, 500, 500);
+  image(bunnyImage, 0, 0, 600, 500);
   // rect(0, 0, 100, 100) ;
   pop();
 
@@ -66,7 +66,7 @@ function draw() {
   noStroke();
   textSize(300);
   textAlign(CENTER);
-  text("ctk", width / 2, height / 2);
+  text("ctk", width / 2, height / 2+100);
 
 }
 
