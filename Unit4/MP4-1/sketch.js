@@ -39,8 +39,8 @@ function setup() {
 function draw() {
 
   background('red'); // light blue
-  rect(0, 430, 800, 800);
-  image(dojo, 0, 0, 500, 500);
+
+  image(dojo, width / 2, height / 2, 800, 800);
 
   // the map command !!!!
   // takes your variable and maps it from range 1 to range 2
