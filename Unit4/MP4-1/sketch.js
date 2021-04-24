@@ -31,6 +31,7 @@ function setup() {
 
   // load any images you need
   dojo = loadImage("assets/dojo.png");
+  katana = loadImage("assets/katana.png")
   imageMode(CENTER);
   rectMode(CENTER);
   noStroke();
@@ -55,9 +56,9 @@ function draw() {
   //  rotate(radians(alpha)); // using alpha in here so it doesn't feel bad
 
   // draw the FROG
-  // image(bunnyImage, 0, 0, 500, 500);
+  image(katana, 0, 0, 75, 75);
   fill('green');
-  ellipse(0, 0, 80, 80);
+  // ellipse(0, 0, 80, 80);
   pop();
 
 
