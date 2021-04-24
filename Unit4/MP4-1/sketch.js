@@ -39,6 +39,7 @@ function setup() {
 function draw() {
 
   background('#c6f5ff'); // light blue
+  image(dojo, 0, 0, 500, 500);
 
   // the map command !!!!
   // takes your variable and maps it from range 1 to range 2
@@ -53,7 +54,7 @@ function draw() {
   //  rotate(radians(alpha)); // using alpha in here so it doesn't feel bad
 
   // draw the FROG
-  image(dojo, 0, 0, 500, 500);
+  // image(bunnyImage, 0, 0, 500, 500);
   fill('green');
   ellipse(0, 0, 80, 80);
   pop();
