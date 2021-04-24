@@ -41,7 +41,7 @@ function draw() {
 
   background('red'); // light blue
 
-  image(dojo, width / 2, height / 2, 800, 800);
+  image(dojo, windowWidth / 2, windowHeight / 2, 800, 800);
 
   // the map command !!!!
   // takes your variable and maps it from range 1 to range 2
@@ -56,7 +56,7 @@ function draw() {
   //  rotate(radians(alpha)); // using alpha in here so it doesn't feel bad
 
   // draw the FROG
-  image(katana, 0, 0, 75, 75);
+  image(katana, 0, 0, 120, 120);
   fill('green');
   // ellipse(0, 0, 80, 80);
   pop();
@@ -76,10 +76,10 @@ function draw() {
   }
 
   // MORE DECORATIONS - write that pretty ATK type on top.
-  fill('white');
+  fill('black');
   textSize(40);
   textAlign(CENTER);
-  text("your words or image here!", width / 2, 600, windowWidth - 200, windowHeight - 200);
+  text("ATTACK!!!!!", width / 2, 600, windowWidth - 200, windowHeight - 200);
 
 
   // Debugging information -- take this out when you're ready for production!
