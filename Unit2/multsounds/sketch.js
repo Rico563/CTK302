@@ -3,7 +3,7 @@ let song1, song2, song3;
 
 function preload() {
   song1 = loadSound("assets/BorrachoTeRecuerdo.mp3");
-  song2 = loadSound("assets/F-ckUpSomeCommas.mp3");
+  song2 = loadSound("assets/HastaelAmanecer.mp3");
   song3 = loadSound("assets/VerySuperstitious.mp3");
   song1.loop();
   song1.pause();
