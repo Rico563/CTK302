@@ -39,6 +39,7 @@ function setup() {
 function draw() {
 
   background('red'); // light blue
+  rect(0, 430, 800, 800);
   image(dojo, 0, 0, 500, 500);
 
   // the map command !!!!
