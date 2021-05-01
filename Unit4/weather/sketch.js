@@ -69,7 +69,12 @@ function draw() {
       fill('white');
       noStroke();
       ellipse(x, 300, 200, 100);
-
+      fill('black')
+      rect(x-20, 270, 10, 10);
+      rect(x+20, 270, 10, 10);
+      rect(x-40, 300, 80, 10);
+      rect(x-40, 290, 10, 20);
+      rect(x+40, 290, 10, 20);
 
       // move the cloud's x position
       x = x + windspeed;
