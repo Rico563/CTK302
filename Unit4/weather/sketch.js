@@ -10,7 +10,7 @@ var humidity = 0;
 
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(500, 500);
 
   // HERE is the call to get the weather.
 
@@ -47,7 +47,7 @@ function draw() {
       break;
 
     case 1:
-      background(200);
+      background('#0798e9');
       fill('black');
       textSize(16);
       text("What is the weather in " + weather.name + "?", 20, 20);
