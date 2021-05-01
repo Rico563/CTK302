@@ -7,6 +7,9 @@ var x = 0;
 var windspeed = 0;
 var temp = 0;
 var humidity = 0;
+var pressure = 0;
+var lat = 0;
+var lon = 0;
 
 
 function setup() {
@@ -34,6 +37,9 @@ function gotData(data) {
   windspeed = weather.wind.speed;
   temp = weather.main.temp;
   humidity = weather.main.humidity;
+  pressure = weather.main.pressure;
+  lat = weather.coord.lat;
+  lon = weather.coord.lon;
 
 }
 
@@ -54,6 +60,9 @@ function draw() {
       text("windspeed is " + windspeed, 20, 40);
       text("temperature is " + temp, 20, 60);
       text("humidity is " + humidity, 20, 80);
+      text("pressure is " + pressure, 20, 100);
+      text("latitude is " + lat, 20, 120);
+      text("longitude is " + lon, 20, 140);
 
 
       // cloud
